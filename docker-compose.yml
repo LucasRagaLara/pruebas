@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    image: ejercicio:v1
+    container_name: ejercicio
+    ports:
+      - "8080:80"
+    restart: always
